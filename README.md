@@ -1,4 +1,4 @@
-# MyAI 🤖
+# ZENO 🤖
 
 A personal offline AI assistant built with Python, Ollama, Vosk and Moondream.
 
