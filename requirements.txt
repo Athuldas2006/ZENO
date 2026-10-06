@@ -1,0 +1,6 @@
+ollama
+vosk
+PyAudio
+keyboard
+Pillow
+pytesseract
