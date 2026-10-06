@@ -138,7 +138,7 @@ Large local models are also ignored.
 
 ## 🛠️ Status
 
-MyAI is a personal project and is still being improved.
+ZENO is a personal project and is still being improved.
 
 Planned improvements include a cleaner startup experience, faster interaction, more system controls and a more polished UI.
 
