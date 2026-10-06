@@ -185,8 +185,8 @@ facts = load_facts()
 # PERSONALITY
 # ============================================================
 
-MYAI_PERSONALITY = """
-You are MyAI, the user's personal offline AI assistant.
+ZENO_PERSONALITY = """
+You are ZENO, the user's personal offline AI assistant.
 
 You are NOT a Wikipedia bot.
 
@@ -498,7 +498,7 @@ print("✅ Microphone ready.")
 root = tk.Tk()
 
 root.title(
-    "MyAI"
+    "ZENO"
 )
 
 root.geometry(
@@ -562,7 +562,7 @@ title_frame.pack(
 
 title_label = tk.Label(
     title_frame,
-    text="MyAI",
+    text="ZENO",
     font=("Segoe UI Semibold", 17),
     fg=TEXT,
     bg=HEADER_BG
@@ -796,7 +796,7 @@ status_frame.pack(
 
 status_label = tk.Label(
     status_frame,
-    text="🟢 MyAI ready",
+    text="🟢 ZENO ready",
     anchor="w",
     font=("Segoe UI", 8),
     fg=SUBTEXT,
@@ -858,7 +858,7 @@ def add_message(
 
         chat_box.insert(
             tk.END,
-            "MyAI\n",
+            "ZENO\n",
             "ai_name"
         )
 
@@ -936,7 +936,7 @@ def show_ui():
         )
 
         print(
-            "🪟 MyAI UI shown."
+            "🪟 ZENO UI shown."
         )
 
     except Exception as e:
@@ -958,7 +958,7 @@ def hide_ui():
         root.withdraw()
 
         print(
-            "🪟 MyAI UI hidden."
+            "🪟 ZENO UI hidden."
         )
 
     except Exception as e:
@@ -978,7 +978,7 @@ def close_window():
     hide_ui()
 
     status_label.config(
-        text="💤 MyAI running in background • Ctrl + Space to wake"
+        text="💤 ZENO running in background • Ctrl + Space to wake"
     )
 
 
@@ -1040,7 +1040,7 @@ def get_open_windows():
         if not title:
             return True
 
-        if title == "MyAI":
+        if title == "ZENO":
             return True
 
         windows.append(
@@ -1782,7 +1782,7 @@ def answer_with_context(
     )
 
 
-    system_prompt = MYAI_PERSONALITY + """
+    system_prompt = ZENO_PERSONALITY + """
 
 SCREEN CAPABILITY:
 
@@ -1979,14 +1979,14 @@ def process_message(
             root.after(
                 0,
                 lambda: add_message(
-                    "MyAI",
+                    "ZENO",
                     response_text
                 )
             )
 
 
             set_status(
-                "🤐 MyAI silent • Text only"
+                "🤐 ZENO silent • Text only"
             )
 
             return
@@ -2008,14 +2008,14 @@ def process_message(
             root.after(
                 0,
                 lambda: add_message(
-                    "MyAI",
+                    "ZENO",
                     response_text
                 )
             )
 
 
             set_status(
-                "🟢 MyAI ready • Voice enabled"
+                "🟢 ZENO ready • Voice enabled"
             )
 
 
@@ -2056,7 +2056,7 @@ def process_message(
                 root.after(
                     0,
                     lambda: add_message(
-                        "MyAI",
+                        "ZENO",
                         response_text
                     )
                 )
@@ -2093,7 +2093,7 @@ def process_message(
             root.after(
                 0,
                 lambda: add_message(
-                    "MyAI",
+                    "ZENO",
                     response_text
                 )
             )
@@ -2105,7 +2105,7 @@ def process_message(
 
 
             set_status(
-                "💤 MyAI sleeping • Ctrl + Space to wake"
+                "💤 ZENO sleeping • Ctrl + Space to wake"
             )
 
             return
@@ -2223,7 +2223,7 @@ def process_message(
 
 
                 system_prompt = (
-                    MYAI_PERSONALITY
+                    ZENO_PERSONALITY
                     + "\n\n"
                     + "Remembered facts about the user:\n"
                     + json.dumps(
@@ -2324,14 +2324,14 @@ def process_message(
         root.after(
             0,
             lambda: add_message(
-                "MyAI",
+                "ZENO",
                 ai_response
             )
         )
 
 
         set_status(
-            "🟢 MyAI ready"
+            "🟢 ZENO ready"
         )
 
 
@@ -2585,13 +2585,13 @@ def listen_for_voice():
             else:
 
                 set_status(
-                    "🟢 MyAI ready"
+                    "🟢 ZENO ready"
                 )
 
         else:
 
             set_status(
-                "🟢 MyAI ready"
+                "🟢 ZENO ready"
             )
 
 
@@ -2670,7 +2670,7 @@ def check_hotkey():
 # ============================================================
 
 add_message(
-    "MyAI",
+    "ZENO",
     "Yo bro! I'm ready. Press Ctrl + Space to wake me."
 )
 
@@ -2682,7 +2682,7 @@ print(
 )
 
 print(
-    "🤖 MyAI READY"
+    "🤖 ZENO READY"
 )
 
 print(
