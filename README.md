@@ -4,6 +4,10 @@ A personal offline AI assistant built with Python, Ollama, Vosk and Moondream.
 
 MyAI is designed to feel less like a formal chatbot and more like a personal assistant that runs locally on a Windows PC.
 
+## 🖥️ UI
+
+![MyAI Interface](assets/MyAi.png)
+
 ## ✨ Features
 
 - 🧠 Local AI chat with **Ollama + Llama 3.2 3B**
