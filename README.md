@@ -121,7 +121,7 @@ MyAi/
 
 ## 🔒 Privacy
 
-MyAI is designed around local processing.
+Zeno is designed around local processing.
 
 Conversation memory and personal facts are stored locally in the `Memory/` folder. That folder is ignored by Git so personal conversations are not uploaded to this repository.
 
